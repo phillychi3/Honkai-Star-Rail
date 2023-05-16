@@ -61,19 +61,19 @@ def up_data():
         # asyncio.run(check_file(ghproxy, "map"))
         # asyncio.run(check_file(ghproxy, "temp"))
         up_data = [
-            {
-                'url_proxy': ghproxy,
-                'raw_proxy': rawghproxy,
-                'skip_verify': False,
-                'type': "star",
-                'version': "beta-2.7_test",
-                'url_zip': "https://github.com/Starry-Wind/Honkai-Star-Rail/archive/refs/heads/beta-2.7_test.zip",
-                'unzip_path': ".",
-                'keep_folder': ['.git','logs','temp','map','tmp','venv'],
-                'keep_file': ['config.json','version.json','star_list.json'],
-                'zip_path': "Honkai-Star-Rail-beta-2.7_test/",
-                'name': "脚本"
-            },
+            # {
+            #     'url_proxy': ghproxy,
+            #     'raw_proxy': rawghproxy,
+            #     'skip_verify': False,
+            #     'type': "star",
+            #     'version': "beta-2.7_test",
+            #     'url_zip': "https://github.com/Starry-Wind/Honkai-Star-Rail/archive/refs/heads/beta-2.7_test.zip",
+            #     'unzip_path': ".",
+            #     'keep_folder': ['.git','logs','temp','map','tmp','venv'],
+            #     'keep_file': ['config.json','version.json','star_list.json'],
+            #     'zip_path': "Honkai-Star-Rail-beta-2.7_test/",
+            #     'name': "脚本"
+            # },
             {
                 'url_proxy': ghproxy,
                 'raw_proxy': rawghproxy,
@@ -87,19 +87,19 @@ def up_data():
                 'zip_path': "Honkai-Star-Rail-map/",
                 'name': "地图"
             },
-            {
-                'url_proxy': ghproxy,
-                'raw_proxy': rawghproxy,
-                'skip_verify': False,
-                'type': "temp",
-                'version': "map",
-                'url_zip': "https://github.com/Starry-Wind/Honkai-Star-Rail/archive/refs/heads/map.zip",
-                'unzip_path': "temp",
-                'keep_folder': [],
-                'keep_file': [],
-                'zip_path': "Honkai-Star-Rail-map/",
-                'name': "图片"
-            },
+            # {
+            #     'url_proxy': ghproxy,
+            #     'raw_proxy': rawghproxy,
+            #     'skip_verify': False,
+            #     'type': "temp",
+            #     'version': "map",
+            #     'url_zip': "https://github.com/Starry-Wind/Honkai-Star-Rail/archive/refs/heads/map.zip",
+            #     'unzip_path': "temp",
+            #     'keep_folder': [],
+            #     'keep_file': [],
+            #     'zip_path': "Honkai-Star-Rail-map/",
+            #     'name': "图片"
+            # },
         ]
         for up in up_data:
             if up["name"] == "脚本" and read_json_file(CONFIG_FILE_NAME, False).get('script_debug', False):

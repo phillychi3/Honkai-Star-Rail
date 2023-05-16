@@ -111,7 +111,6 @@ venv.bak/
 # custom 
 logs/
 map/
-temp/
 tmp/
 config.json
 Honkai_Star_Rail.bat
